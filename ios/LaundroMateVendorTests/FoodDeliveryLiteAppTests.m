@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface LaundroMateTests : XCTestCase
+@interface LaundroMateVendorTests : XCTestCase
 
 @end
 
-@implementation LaundroMateTests
+@implementation LaundroMateVendorTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

@@ -1,4 +1,4 @@
-package com.laundromate;
+package com.laundromatevendor;
 
 import com.facebook.react.ReactActivity;
 
@@ -11,6 +11,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "LaundroMate";
+    return "LaundroMateVendor";
   }
 }

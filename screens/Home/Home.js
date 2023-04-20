@@ -1,25 +1,24 @@
 import React from 'react';
 import {
-	View,
-	Text,
-	TouchableOpacity,
+	FlatList,
 	Image,
+	Text,
 	TextInput,
-	FlatList
+	TouchableOpacity,
+	View
 } from 'react-native';
-
-import FilterModal from './FilterModal';
 import { HorizontalClothesCard, VerticalClothesCard } from "../../components";
-
+import FilterModal from './FilterModal';
+import { useNavigation } from '@react-navigation/native';
 import {
+	COLORS,
 	FONTS,
 	SIZES,
-	COLORS,
-	icons,
-	dummyData
+	dummyData,
+	icons
 } from "../../constants";
-import { useNavigation } from '@react-navigation/native';
 import { location } from '../Authentication/SignUp';
+import { vendorServicesMap } from '../VendorServices/VendorServices';
 
 const Section = ({ title, onPress, children }) => {
 	return (
@@ -54,22 +53,12 @@ const Section = ({ title, onPress, children }) => {
 }
 
 const Home = () => {
-	const navigation=useNavigation();
-
-
-
-
-	
-
-
-
-
+	const navigation = useNavigation();
 	const [selectedCategoryId, setSelectedCategoryId] = React.useState(1);
 	const [selectedMenuType, setSelectedMenuType] = React.useState(1);
 	const [popular, setPopular] = React.useState([]);
 	const [recommends, setRecommends] = React.useState([]);
 	const [menuList, setMenuList] = React.useState([]);
-
 	const [showFilterModal, setShowFilterModal] = React.useState(false);
 
 	React.useEffect(() => {
@@ -77,6 +66,8 @@ const Home = () => {
 	}, []);
 
 	//Handler
+
+	console.log(vendorServicesMap);
 
 	function handleChangeCategory(categoryId, menuTypeId) {
 		// Retrieve the popular menu
@@ -220,7 +211,7 @@ const Home = () => {
 								width: 150
 							}}
 							item={item}
-							
+
 							onPress={() => console.log("HorizontalClothesCard")}
 						/>
 					)}
@@ -228,7 +219,7 @@ const Home = () => {
 			</Section>
 		)
 	}
-	const DATA=[{
+	const DATA = [{
 		id: 1,
 		name: "Total Revenue Generated",
 		description: "",
@@ -238,7 +229,7 @@ const Home = () => {
 		isFavourite: true,
 		image: require("../../assets/dummyData/regularwash.png"),
 		onPress: "console.log(\"1\")"
-	  },{
+	}, {
 		id: 2,
 		name: "Count",
 		description: "",
@@ -248,7 +239,7 @@ const Home = () => {
 		isFavourite: true,
 		image: require("../../assets/dummyData/heavysteampress.png"),
 		onPress: "console.log(\"2\")"
-	  }]
+	}]
 
 	function renderPopularSection() {
 		return (
@@ -269,10 +260,9 @@ const Home = () => {
 							}}
 							item={item}
 							onPress={() => {
-								if(item.id==2)
-								{
+								if (item.id == 2) {
 									navigation.navigate("MyCard");
-									 //console.log("Card 2");
+									//console.log("Card 2");
 								}
 
 							}}
@@ -425,7 +415,7 @@ const Home = () => {
 								width: 110
 							}}
 							item={item}
-							
+
 							onPress={() => console.log("HorizontalClothesCard")}
 						/>
 					)

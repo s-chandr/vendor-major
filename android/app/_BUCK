@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.laundromate",
+    package = "com.laundromatevendor",
 )
 
 android_resource(
     name = "res",
-    package = "com.laundromate",
+    package = "com.laundromatevendor",
     res = "src/main/res",
 )
 

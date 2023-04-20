@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* LaundroMateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LaundroMateTests.m */; };
+		00E356F31AD99517003FC87E /* LaundroMateVendorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LaundroMateVendorTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -21,8 +21,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		87E8C0A320B848B9AB39E10A /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C071409E1D344E4E918479A8 /* Poppins-BoldItalic.ttf */; };
 		8911F005B42C4DF0AB86E861 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AE42D5D56462C80D945CF /* Poppins-Light.ttf */; };
-		8FCF7DF40F2BADB3E5D4CADA /* libPods-LaundroMate-LaundroMateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FC2ABD9E3DE78E3772D6E9 /* libPods-LaundroMate-LaundroMateTests.a */; };
-		91CA8B537D40D4CFB896EF41 /* libPods-LaundroMate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1421C8ACD2F1D3C946EA7958 /* libPods-LaundroMate.a */; };
+		8FCF7DF40F2BADB3E5D4CADA /* libPods-LaundroMateVendor-LaundroMateVendorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FC2ABD9E3DE78E3772D6E9 /* libPods-LaundroMateVendor-LaundroMateVendorTests.a */; };
+		91CA8B537D40D4CFB896EF41 /* libPods-LaundroMateVendor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1421C8ACD2F1D3C946EA7958 /* libPods-LaundroMateVendor.a */; };
 		9B0E1D49A4D6444F9CAD807C /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCCB29ABA11240FA8A5B9982 /* Poppins-SemiBold.ttf */; };
 		ABB853D21E4547D9A17E380F /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DF9968EC44B4AA8B746675E /* Poppins-Thin.ttf */; };
 		ABD8208C643849158C111DD7 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF30EBBC9F42403D95228E8B /* Poppins-ExtraLightItalic.ttf */; };
@@ -50,41 +50,41 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = LaundroMate;
+			remoteInfo = LaundroMateVendor;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* LaundroMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundroMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* LaundroMateVendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundroMateVendorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* LaundroMateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaundroMateTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* LaundroMateVendorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaundroMateVendorTests.m; sourceTree = "<group>"; };
 		066F831C334049EF906F31DC /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		06B214219D7346FB8468270E /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* LaundroMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundroMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LaundroMate/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LaundroMate/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LaundroMate/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LaundroMate/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LaundroMate/main.m; sourceTree = "<group>"; };
-		1421C8ACD2F1D3C946EA7958 /* libPods-LaundroMate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaundroMate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* LaundroMateVendor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundroMateVendor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LaundroMateVendor/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LaundroMateVendor/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LaundroMateVendor/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LaundroMateVendor/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LaundroMateVendor/main.m; sourceTree = "<group>"; };
+		1421C8ACD2F1D3C946EA7958 /* libPods-LaundroMateVendor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaundroMateVendor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1694F17E2F14404D9DDCEF6B /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../assets/fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		18764DC34DF04C5AA76BC585 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		209318C4B04A4F9B9C59EBB7 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		2425D26FC8054230A5FF870D /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		269AE42D5D56462C80D945CF /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
-		34FC2ABD9E3DE78E3772D6E9 /* libPods-LaundroMate-LaundroMateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaundroMate-LaundroMateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FC2ABD9E3DE78E3772D6E9 /* libPods-LaundroMateVendor-LaundroMateVendorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaundroMateVendor-LaundroMateVendorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF9968EC44B4AA8B746675E /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		55BCAB7CB5CA4D3099888314 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		7DA613FC25ED726D905B9503 /* Pods-LaundroMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMate.debug.xcconfig"; path = "Target Support Files/Pods-LaundroMate/Pods-LaundroMate.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LaundroMate/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DA613FC25ED726D905B9503 /* Pods-LaundroMateVendor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMateVendor.debug.xcconfig"; path = "Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LaundroMateVendor/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A8C7D847EE443DE8E05B8D7 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		9CAB232CF12245D1AA45CC45 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		AE6DC63DBDC2490982B8A949 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		AF9DA41D34964F7FB89D7D34 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		C071409E1D344E4E918479A8 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
-		C10764AEFF87D82CD82E1B59 /* Pods-LaundroMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMate.release.xcconfig"; path = "Target Support Files/Pods-LaundroMate/Pods-LaundroMate.release.xcconfig"; sourceTree = "<group>"; };
-		C1D70640250E43DE05954572 /* Pods-LaundroMate-LaundroMateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMate-LaundroMateTests.debug.xcconfig"; path = "Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C30337B863F720D5ED008A7D /* Pods-LaundroMate-LaundroMateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMate-LaundroMateTests.release.xcconfig"; path = "Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests.release.xcconfig"; sourceTree = "<group>"; };
+		C10764AEFF87D82CD82E1B59 /* Pods-LaundroMateVendor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMateVendor.release.xcconfig"; path = "Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor.release.xcconfig"; sourceTree = "<group>"; };
+		C1D70640250E43DE05954572 /* Pods-LaundroMateVendor-LaundroMateVendorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMateVendor-LaundroMateVendorTests.debug.xcconfig"; path = "Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C30337B863F720D5ED008A7D /* Pods-LaundroMateVendor-LaundroMateVendorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundroMateVendor-LaundroMateVendorTests.release.xcconfig"; path = "Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8EC9AF3AABC4DADAD962369 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		DCCB29ABA11240FA8A5B9982 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FCF7DF40F2BADB3E5D4CADA /* libPods-LaundroMate-LaundroMateTests.a in Frameworks */,
+				8FCF7DF40F2BADB3E5D4CADA /* libPods-LaundroMateVendor-LaundroMateVendorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,20 +115,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91CA8B537D40D4CFB896EF41 /* libPods-LaundroMate.a in Frameworks */,
+				91CA8B537D40D4CFB896EF41 /* libPods-LaundroMateVendor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* LaundroMateTests */ = {
+		00E356EF1AD99517003FC87E /* LaundroMateVendorTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* LaundroMateTests.m */,
+				00E356F21AD99517003FC87E /* LaundroMateVendorTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = LaundroMateTests;
+			path = LaundroMateVendorTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -178,16 +178,16 @@
 		100DEBDBF1408B808BA5CC64 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7DA613FC25ED726D905B9503 /* Pods-LaundroMate.debug.xcconfig */,
-				C10764AEFF87D82CD82E1B59 /* Pods-LaundroMate.release.xcconfig */,
-				C1D70640250E43DE05954572 /* Pods-LaundroMate-LaundroMateTests.debug.xcconfig */,
-				C30337B863F720D5ED008A7D /* Pods-LaundroMate-LaundroMateTests.release.xcconfig */,
+				7DA613FC25ED726D905B9503 /* Pods-LaundroMateVendor.debug.xcconfig */,
+				C10764AEFF87D82CD82E1B59 /* Pods-LaundroMateVendor.release.xcconfig */,
+				C1D70640250E43DE05954572 /* Pods-LaundroMateVendor-LaundroMateVendorTests.debug.xcconfig */,
+				C30337B863F720D5ED008A7D /* Pods-LaundroMateVendor-LaundroMateVendorTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* LaundroMate */ = {
+		13B07FAE1A68108700A75B9A /* LaundroMateVendor */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -197,15 +197,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = LaundroMate;
+			name = LaundroMateVendor;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				1421C8ACD2F1D3C946EA7958 /* libPods-LaundroMate.a */,
-				34FC2ABD9E3DE78E3772D6E9 /* libPods-LaundroMate-LaundroMateTests.a */,
+				1421C8ACD2F1D3C946EA7958 /* libPods-LaundroMateVendor.a */,
+				34FC2ABD9E3DE78E3772D6E9 /* libPods-LaundroMateVendor-LaundroMateVendorTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,9 +220,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* LaundroMate */,
+				13B07FAE1A68108700A75B9A /* LaundroMateVendor */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* LaundroMateTests */,
+				00E356EF1AD99517003FC87E /* LaundroMateVendorTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				100DEBDBF1408B808BA5CC64 /* Pods */,
@@ -236,8 +236,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* LaundroMate.app */,
-				00E356EE1AD99517003FC87E /* LaundroMateTests.xctest */,
+				13B07F961A680F5B00A75B9A /* LaundroMateVendor.app */,
+				00E356EE1AD99517003FC87E /* LaundroMateVendorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,9 +245,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* LaundroMateTests */ = {
+		00E356ED1AD99517003FC87E /* LaundroMateVendorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LaundroMateTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LaundroMateVendorTests" */;
 			buildPhases = (
 				913107BA4879BB6D5BEB7F67 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -261,14 +261,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = LaundroMateTests;
-			productName = LaundroMateTests;
-			productReference = 00E356EE1AD99517003FC87E /* LaundroMateTests.xctest */;
+			name = LaundroMateVendorTests;
+			productName = LaundroMateVendorTests;
+			productReference = 00E356EE1AD99517003FC87E /* LaundroMateVendorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* LaundroMate */ = {
+		13B07F861A680F5B00A75B9A /* LaundroMateVendor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LaundroMate" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LaundroMateVendor" */;
 			buildPhases = (
 				CF208C7F4E7D30AB43D11688 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -283,9 +283,9 @@
 			);
 			dependencies = (
 			);
-			name = LaundroMate;
-			productName = LaundroMate;
-			productReference = 13B07F961A680F5B00A75B9A /* LaundroMate.app */;
+			name = LaundroMateVendor;
+			productName = LaundroMateVendor;
+			productReference = 13B07F961A680F5B00A75B9A /* LaundroMateVendor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LaundroMate" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LaundroMateVendor" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -318,8 +318,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* LaundroMate */,
-				00E356ED1AD99517003FC87E /* LaundroMateTests */,
+				13B07F861A680F5B00A75B9A /* LaundroMateVendor */,
+				00E356ED1AD99517003FC87E /* LaundroMateVendorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,15 +392,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate/Pods-LaundroMate-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate/Pods-LaundroMate-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMate/Pods-LaundroMate-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		82872911227C262D4C3042A8 /* [CP] Copy Pods Resources */ = {
@@ -409,15 +409,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		913107BA4879BB6D5BEB7F67 /* [CP] Check Pods Manifest.lock */ = {
@@ -435,7 +435,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LaundroMate-LaundroMateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LaundroMateVendor-LaundroMateVendorTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -457,7 +457,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LaundroMate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LaundroMateVendor-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -470,15 +470,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMate-LaundroMateTests/Pods-LaundroMate-LaundroMateTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor-LaundroMateVendorTests/Pods-LaundroMateVendor-LaundroMateVendorTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FAE32C8566C5F8237DAC1686 /* [CP] Embed Pods Frameworks */ = {
@@ -487,15 +487,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate/Pods-LaundroMate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LaundroMate/Pods-LaundroMate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMate/Pods-LaundroMate-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaundroMateVendor/Pods-LaundroMateVendor-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -524,7 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* LaundroMateTests.m in Sources */,
+				00E356F31AD99517003FC87E /* LaundroMateVendorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +542,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* LaundroMate */;
+			target = 13B07F861A680F5B00A75B9A /* LaundroMateVendor */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -550,14 +550,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D70640250E43DE05954572 /* Pods-LaundroMate-LaundroMateTests.debug.xcconfig */;
+			baseConfigurationReference = C1D70640250E43DE05954572 /* Pods-LaundroMateVendor-LaundroMateVendorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = LaundroMateTests/Info.plist;
+				INFOPLIST_FILE = LaundroMateVendorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,17 +571,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundroMate.app/LaundroMate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundroMateVendor.app/LaundroMateVendor";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C30337B863F720D5ED008A7D /* Pods-LaundroMate-LaundroMateTests.release.xcconfig */;
+			baseConfigurationReference = C30337B863F720D5ED008A7D /* Pods-LaundroMateVendor-LaundroMateVendorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = LaundroMateTests/Info.plist;
+				INFOPLIST_FILE = LaundroMateVendorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,19 +595,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundroMate.app/LaundroMate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundroMateVendor.app/LaundroMateVendor";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DA613FC25ED726D905B9503 /* Pods-LaundroMate.debug.xcconfig */;
+			baseConfigurationReference = 7DA613FC25ED726D905B9503 /* Pods-LaundroMateVendor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = LaundroMate/Info.plist;
+				INFOPLIST_FILE = LaundroMateVendor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,7 +618,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = LaundroMate;
+				PRODUCT_NAME = LaundroMateVendor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -627,12 +627,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C10764AEFF87D82CD82E1B59 /* Pods-LaundroMate.release.xcconfig */;
+			baseConfigurationReference = C10764AEFF87D82CD82E1B59 /* Pods-LaundroMateVendor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = LaundroMate/Info.plist;
+				INFOPLIST_FILE = LaundroMateVendor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,7 +643,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = LaundroMate;
+				PRODUCT_NAME = LaundroMateVendor;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -775,7 +775,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LaundroMateTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LaundroMateVendorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -784,7 +784,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LaundroMate" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LaundroMateVendor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -793,7 +793,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LaundroMate" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LaundroMateVendor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

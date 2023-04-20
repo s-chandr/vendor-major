@@ -15,6 +15,7 @@ import {
     TextButton,
     TextIconButton
 } from "../../components";
+import { language } from '../Language/Launguage';
 
 import { utils } from "../../utils";
 
@@ -28,8 +29,8 @@ const PhoneNumber = ({ navigation }) => {
     }
     return (
         <AuthLayout
-            title="Let's Sign You In"
-            subtitle="Please enter your 10 digit mobile number"
+            title={language=="E"?"Let's Sign You In":"साइन इन करें"}
+            subtitle={language=="E"?"Please enter your 10 digit mobile number":"कृपया अपना दस अंकों का मोबाइल नंबर दर्ज करें"}
             titleContainerStyle={{
                 marginTop: SIZES.padding * 2
             }}
@@ -40,7 +41,7 @@ const PhoneNumber = ({ navigation }) => {
                     marginTop: SIZES.padding * 2
                 }}>
                 <FormInput
-                    label="Phone Number (+91)"
+                    label={language=="E"?"Phone Number (+91)":"मोबाइल नंबर (+91)"}
                     keyboardType="numeric"
                     autoCompleteType="tel"
                     placeholder="942 504 2465"
@@ -69,7 +70,7 @@ const PhoneNumber = ({ navigation }) => {
                 />
             </View>
             <TextButton
-                label="Send OTP"
+                label={language=="E"?"Send OTP":"ओटीपी भेजें"}
                 disabled={isEnableSendOtp() ? false : true}
                 buttonContainerStyle={{
                     height: 55,

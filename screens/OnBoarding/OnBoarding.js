@@ -10,6 +10,8 @@ import {
 
 import { constants, images, SIZES, COLORS, FONTS } from '../../constants'
 import { TextButton } from "../../components";
+import { language } from "../Language/Launguage";
+
 
 const Onboarding = ({ navigation }) => {
 
@@ -115,7 +117,7 @@ const Onboarding = ({ navigation }) => {
 						}}
 					>
 						<TextButton
-							label="Skip"
+							label={language=="E"?"Skip":"स्किप"}
 							buttonContainerStyle={{
 								backgroundColor: null
 							}}
@@ -125,7 +127,7 @@ const Onboarding = ({ navigation }) => {
 							onPress={() => navigation.replace("PhoneNumber")}
 						/>
 						<TextButton
-							label="Next"
+							label={language=="E"?"Next":"आगे बढ़ें"}
 							buttonContainerStyle={{
 								height: 60,
 								width: 200,
@@ -150,10 +152,10 @@ const Onboarding = ({ navigation }) => {
 						}}
 					>
 						<TextButton
-							label="Let's Get Started"
+							label={language=="E"?"Let's Get Started":"शुरू करें"}
 							buttonContainerStyle={{
 								height: 60,
-								borderRadius: SIZES.padding
+								borderRadius: SIZES.radius
 							}}
 							onPress={() => {
 								navigation.replace("PhoneNumber")
@@ -237,7 +239,7 @@ const Onboarding = ({ navigation }) => {
 								<Text style={{
 									...FONTS.h1, fontSize: 25, textAlign: 'center', color: COLORS.darkGray
 								}}>
-									{item.title}
+									{language=="E"?item.titleE:item.titleH}
 								</Text>
 								<Text
 									style={{
@@ -248,7 +250,7 @@ const Onboarding = ({ navigation }) => {
 										...FONTS.body3
 									}}
 								>
-									{item.description}
+									{language=="E"?item.descriptionE:item.descriptionH}
 								</Text>
 							</View>
 						</View>

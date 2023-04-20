@@ -7,7 +7,7 @@ import {
 	NativeModules,
 	Dimensions,
 	ScrollView,
-	
+
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 
@@ -19,14 +19,13 @@ import { FormInput, TextButton, TextIconButton } from '../../components'
 import { utils } from '../../utils';
 import Geolocation from 'react-native-geolocation-service';
 import { PermissionsAndroid } from "react-native";
+import { language } from '../Language/Launguage';
+import { dummyData } from '../../constants';
 
-var location;
+var location,vendorName;
 const SignUp = ({ navigation }) => {
-	const [email, setEmail] = React.useState('')
 	const [name, setName] = React.useState('')
 	const [laundryName, setLaundryName] = React.useState('')
-	const [emailError, setEmailError] = React.useState('')
-	const [nameError, setNameError] = React.useState('')
 	const [laundryNameError, setLaundryNameError] = React.useState('')
 	function isEnableSignUp() {
 		// return email != '' && name != '' && laundryName!='' && emailError == '' && nameError == '' && laundryNameError == '' 
@@ -38,10 +37,6 @@ const SignUp = ({ navigation }) => {
 	const [longitude, setLongitude] = React.useState(0);
 	const [address, setAddress] = React.useState('Press Get Location')
 
-	const [toggleCheckBox1, setToggleCheckBox1] = React.useState(false)
-
-	const [toggleCheckBox2, setToggleCheckBox2] = React.useState(false)
-	const [toggleCheckBox3, setToggleCheckBox3] = React.useState(false)
 	const requestLocationPermission = async () => {
 		try {
 			const granted = await PermissionsAndroid.request(
@@ -91,8 +86,8 @@ const SignUp = ({ navigation }) => {
 	return (
 
 		<AuthLayout
-			title="Welcome to LaundroMate"
-			subtitle="Let's create your account!"
+			title={language == "E" ? "Welcome to LaundroMate Vendor" : "LaundroMate वेंडर में आपका स्वागत है"}
+			subtitle={language == "E" ? "Let's create your account!" : "आइए आपका अकाउंट बनाएं"}
 			titleContainerStyle={{
 				marginTop: SIZES.radius
 			}}
@@ -104,107 +99,46 @@ const SignUp = ({ navigation }) => {
 					marginTop: SIZES.padding,
 				}}
 			>
-				<FormInput
-					label="Name"
-					onChange={(value) => {
-						setName(value)
-					}}
-				/>
-				<FormInput
-					label="Shop Name"
-					onChange={(value) => {
-						setLaundryName(value)
-					}}
-				/>
-				<FormInput
-					label="Email"
-					containerStyle={{
-						marginTop: SIZES.radius
-					}}
-					keyboardType="email-address"
-					autoCompleteType="email"
-					onChange={(value) => {
-						// validate email I
-						utils.validateEmail(value, setEmailError)
-						setEmail(value)
-					}}
-					errorMsg={emailError}
-					appendComponent={
-						<View
+				<ScrollView
+					showsVerticalScrollIndicator={false}
+				>
+					<FormInput
+						label={language == "E" ? "Name" : "आपका नाम"}
+						onChange={(value) => {
+							setName(value)
+							vendorName=value;
+						}}
+					/>
+					<FormInput
+						label={language == "E" ? "Shop Name" : "आपकी दुकान का नाम"}
+						containerStyle={{
+							marginTop: SIZES.radius
+						}}
+						onChange={(value) => {
+							setLaundryName(value)
+						}}
+					/>
+
+					<TouchableOpacity
+						style={{
+							marginTop: SIZES.padding + 5,
+							height: 180,
+							display: 'flex',
+							borderRadius: SIZES.radius,
+							overflow: 'hidden'
+						}}
+					>
+						<Image
+							source={dummyData.userMap}
 							style={{
-								justifyContent: 'center'
+								flex: 1,
+								height: '100%',
+								width: '100%'
 							}}
-						>
-							<Image
-								source={email == '' || (email != '' && emailError == '') ? icons.correct : icons.cancel}
-								style={{
-									height: 20,
-									width: 20,
-									tintColor: email == '' ? COLORS.gray : (email != '' && emailError == '') ? COLORS.green : COLORS.red
-								}}
-							/>
-						</View>
-					}
-				/>
-				
-				
-				<View 
-					style={{
-						display: 'flex',
-						flexDirection: 'row',
-						
-						alignItems: 'center',
-						marginTop: SIZES.padding,
-					}}
-				>
-					<CheckBox
-					
-					disabled={false}
-					value={toggleCheckBox1}
-					onValueChange={(newValue) => setToggleCheckBox1(newValue)}
-					></CheckBox>
-					<Text>Roll Press</Text>
+						/>
+					</TouchableOpacity>
+				</ScrollView>
 
-					
-				</View>
-				<View 
-					style={{
-						display: 'flex',
-						flexDirection: 'row',
-						
-						alignItems: 'center',
-						marginTop: SIZES.padding,
-					}}
-				>
-					<CheckBox
-					
-					disabled={false}
-					value={toggleCheckBox2}
-					onValueChange={(newValue) => setToggleCheckBox2(newValue)}
-					></CheckBox>
-					<Text>Dry Clean</Text>
-
-					
-				</View>
-				<View 
-					style={{
-						display: 'flex',
-						flexDirection: 'row',
-						
-						alignItems: 'center',
-						marginTop: SIZES.padding,
-					}}
-				>
-					<CheckBox
-					
-					disabled={false}
-					value={toggleCheckBox3}
-					onValueChange={(newValue) => setToggleCheckBox3(newValue)}
-					></CheckBox>
-					<Text>Press</Text>
-
-					
-				</View>
 				<View
 					style={{
 						display: 'flex',
@@ -236,8 +170,7 @@ const SignUp = ({ navigation }) => {
 						}}
 					/>
 				</View>
-				
-				{/* Sign up amd Sign In */}
+
 				<TextButton
 					label="Sign Up"
 					disabled={isEnableSignUp() ? false : true}
@@ -249,7 +182,7 @@ const SignUp = ({ navigation }) => {
 						backgroundColor: isEnableSignUp() ? COLORS.primary : COLORS.transparentPrimary
 					}}
 					onPress={() => {
-						navigation.navigate("Home");
+						navigation.navigate("VendorServices");
 						location = address;
 					}}
 				/>
@@ -258,5 +191,5 @@ const SignUp = ({ navigation }) => {
 	)
 
 }
-export { location };
+export { location,vendorName };
 export default SignUp;

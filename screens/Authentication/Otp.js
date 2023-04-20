@@ -9,6 +9,7 @@ import { FONTS, SIZES, COLORS } from "../../constants";
 import { TextButton } from "../../components";
 import { AuthLayout } from "../";
 import { number } from "./PhoneNumber";
+import { language } from '../Language/Launguage';
 
 const Otp = ({ navigation }) => {
     const [timer, setTimer] = React.useState(60)
@@ -29,8 +30,8 @@ const Otp = ({ navigation }) => {
     }, [])
     return (
         <AuthLayout
-            title="OTP Authentication"
-            subtitle="An authentication code has been sent to you"
+            title={language == "E" ? "OTP Authentication" : "ओटीपी प्रमाणीकरण"}
+            subtitle={language == "E" ? "An authentication code has been sent to you" : "कृपया आपको भेजा गया प्रमाणीकरण कोड दर्ज करें"}
             titleContainerStyle={{
                 marginTop: SIZES.padding * 2
             }}
@@ -67,8 +68,8 @@ const Otp = ({ navigation }) => {
                         marginTop: SIZES.padding
                     }}
                 >
-                    <Text style={{ color: COLORS.darkGray, ...FONTS.body3 }}>Didn't recieve code ?  </Text>
-                    <TextButton label={`Resend (${timer}s)`}
+                    <Text style={{ color: COLORS.darkGray, ...FONTS.body3 }}>{language == "E" ? "Didn't recieve code? " : "कोड प्राप्त नहीं हुआ? "}</Text>
+                    <TextButton label={language=="E"?`Resend `:"पुन: भेजें " + `(${timer}s)`}
                         disabled={timer == 0 ? false : true}
                         buttonContainerStyle={{
                             // marginTop: SIZES.base,
@@ -83,7 +84,7 @@ const Otp = ({ navigation }) => {
             {/* Footer */}
             <View>
                 <TextButton
-                    label="Continue"
+                    label={language == "E" ? "Continue" : "आगे बढ़ें"}
                     buttonContainerStyle={{
                         height: 50,
                         alignItems: "center",
@@ -113,7 +114,7 @@ const Otp = ({ navigation }) => {
 
                 />
 
-                <View
+                {language == "E" && <View
                     style={{
                         marginTop: SIZES.padding,
                         alignItems: "center",
@@ -138,7 +139,46 @@ const Otp = ({ navigation }) => {
                         }}
                         onPress={() => console.log("TnC")}
                     />
-                </View>
+                </View>}
+
+                {language == "H" && <View
+                    style={{
+                        marginTop: SIZES.padding,
+                        alignItems: "center",
+                    }}
+                >
+                    <Text
+                        style={{
+                            color: COLORS.darkGray,
+                            ...FONTS.body3
+                        }}
+                    >
+                        साइन अप करके, आप हमारे
+                    </Text>
+                    <View
+                        style={{ flexDirection: 'row' }}
+                    >
+                        <TextButton
+                            label="नियमों और शर्तों "
+                            buttonContainerStyle={{
+                                backgroundColor: null
+                            }}
+                            labelStyle={{
+                                color: COLORS.primary,
+                                ...FONTS.body3
+                            }}
+                            onPress={() => console.log("TnC")}
+                        />
+                        <Text
+                            style={{
+                                color: COLORS.darkGray,
+                                ...FONTS.body3
+                            }}
+                        >
+                            से सहमत होते हैं
+                        </Text>
+                    </View>
+                </View>}
             </View>
         </AuthLayout>
 
