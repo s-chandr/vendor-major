@@ -22,7 +22,7 @@ import { PermissionsAndroid } from "react-native";
 import { language } from '../Language/Launguage';
 import { dummyData } from '../../constants';
 
-var location,vendorName;
+var location, vendorName, vendorLaundryName;
 const SignUp = ({ navigation }) => {
 	const [name, setName] = React.useState('')
 	const [laundryName, setLaundryName] = React.useState('')
@@ -106,7 +106,7 @@ const SignUp = ({ navigation }) => {
 						label={language == "E" ? "Name" : "आपका नाम"}
 						onChange={(value) => {
 							setName(value)
-							vendorName=value;
+							vendorName = value;
 						}}
 					/>
 					<FormInput
@@ -116,6 +116,7 @@ const SignUp = ({ navigation }) => {
 						}}
 						onChange={(value) => {
 							setLaundryName(value)
+							vendorLaundryName = laundryName;
 						}}
 					/>
 
@@ -191,5 +192,5 @@ const SignUp = ({ navigation }) => {
 	)
 
 }
-export { location,vendorName };
+export { location, vendorName, vendorLaundryName };
 export default SignUp;
