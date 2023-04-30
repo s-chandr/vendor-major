@@ -9,6 +9,9 @@ const profile = require("../assets/images/profile.png")
 const translate = require("../assets/images/translate.png")
 const a=require("../assets/images/a.png")
 const A=require("../assets/images/A.png")
+const rupee=require("../assets/images/rupee_coin.png")
+const orders_completed=require("../assets/images/orders_completed.png")
+const new_orders=require("../assets/images/new_orders.png")
 
 export default {
     background_01,
@@ -21,5 +24,8 @@ export default {
     profile,
     translate,
     a,
-    A
+    A,
+    rupee,
+    orders_completed,
+    new_orders
 }

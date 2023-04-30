@@ -7,7 +7,7 @@ import {
 
 import { Header, IconButton, TextButton,  CardItem,CartQuantityButton } from '../../components';
 import {FONTS, SIZES, COLORS, icons, dummyData} from '../../constants';
-import {order} from '../Card/MyCard';
+import {order} from '../Orders/Orders';
 
 const OrderDetail = ({ navigation }) => {
 

@@ -5,9 +5,7 @@ import SplashScreen from 'react-native-splash-screen';
 
 import {
 	OnBoarding,
-	SignIn,
 	SignUp,
-	ForgotPassword,
 	Otp,
 	MyCard,
 	OrderDetail
@@ -15,6 +13,8 @@ import {
 import Language from "./screens/Language/Launguage";
 
 import CustomDrawer from "./navigation/CustomDrawer";
+
+import Orders from "./screens/Orders/Orders";
 
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
@@ -56,22 +56,12 @@ const App = () => {
 					/>
 
 					<Stack.Screen
-						name="SignIn"
-						component={SignIn}
-					/>
-
-					<Stack.Screen
 						name="SignUp"
 						component={SignUp}
 					/>
 					<Stack.Screen
 						name="VendorServices"
 						component={VendorServices}
-					/>
-
-					<Stack.Screen
-						name="ForgotPassword"
-						component={ForgotPassword}
 					/>
 
 					<Stack.Screen
@@ -85,8 +75,8 @@ const App = () => {
 					/>
 
 					<Stack.Screen
-						name="MyCard"
-						component={MyCard}
+						name="Orders"
+						component={Orders}
 					/>
 
 					<Stack.Screen

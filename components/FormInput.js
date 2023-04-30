@@ -51,10 +51,12 @@ const FormInput = ({
 					style={{
 						flex: 1,
 						...inputStyle,
+						...FONTS.body4,
 						color: COLORS.black
 					}}
 					placeholder={placeholder}
 					placeholderTextColor={COLORS.gray}
+					
 					secureTextEntry={secureTextEntry}
 					keyboardType={keyboardType}
 					autoCompleteType={autoCompleteType}

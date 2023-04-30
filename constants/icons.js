@@ -28,8 +28,10 @@ const help = require("../assets/icons/help.png")
 const cancel = require("../assets/icons/cross.png")
 const back = require("../assets/icons/back.png")
 const audio_supp=require("../assets/icons/voice-assistant.png")
+const tick=require("../assets/icons/tick.png")
 export default {
     coupon,
+    tick,
     audio_supp,
     cross,
     cart,

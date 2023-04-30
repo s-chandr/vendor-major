@@ -35,7 +35,7 @@ const SignUp = ({ navigation }) => {
 
 	const [latitude, setLatitude] = React.useState(0);
 	const [longitude, setLongitude] = React.useState(0);
-	const [address, setAddress] = React.useState('Press Get Location')
+	const [address, setAddress] = React.useState(language=="E"?"Press Get Location":"स्थान प्राप्ति का बटन दबाएं")
 
 	const requestLocationPermission = async () => {
 		try {
@@ -104,6 +104,7 @@ const SignUp = ({ navigation }) => {
 				>
 					<FormInput
 						label={language == "E" ? "Name" : "आपका नाम"}
+						placeholder={language=="E"?"What should we call you?":"हमें आपको क्या बुलाना चाहिए?"}
 						onChange={(value) => {
 							setName(value)
 							vendorName = value;
@@ -111,12 +112,13 @@ const SignUp = ({ navigation }) => {
 					/>
 					<FormInput
 						label={language == "E" ? "Shop Name" : "आपकी दुकान का नाम"}
+						placeholder={language=="E"?"What is your shop name?":"आपकी दुकान का नाम क्या है?"}
 						containerStyle={{
 							marginTop: SIZES.radius
 						}}
 						onChange={(value) => {
 							setLaundryName(value)
-							vendorLaundryName = laundryName;
+							vendorLaundryName = value;
 						}}
 					/>
 
@@ -156,10 +158,10 @@ const SignUp = ({ navigation }) => {
 							flex: 4
 						}}
 					>
-						Location: <Text style={{ color: COLORS.primary, fontWeight: 'bold' }}>{latitude}, {longitude}</Text>{'\n'}{address}
+						{language=="E"?"Location":"स्थान"}: <Text style={{ color: COLORS.primary, fontWeight: 'bold' }}>{latitude}, {longitude}</Text>{'\n'}{address}
 					</Text>
 					<TextButton
-						label="Get Location"
+						label={language=="E"?"Get Location":"स्थान प्राप्त करें"}
 						onPress={requestLocationPermission}
 						buttonContainerStyle={{
 							alignItems: 'center',
@@ -173,7 +175,7 @@ const SignUp = ({ navigation }) => {
 				</View>
 
 				<TextButton
-					label="Sign Up"
+					label={language=="E"?"Sign Up":"साइन अप करें"}
 					disabled={isEnableSignUp() ? false : true}
 					buttonContainerStyle={{
 						height: 55,
@@ -184,6 +186,7 @@ const SignUp = ({ navigation }) => {
 					}}
 					onPress={() => {
 						navigation.navigate("VendorServices");
+						console.log();
 						location = address;
 					}}
 				/>

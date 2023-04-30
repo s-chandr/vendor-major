@@ -16,6 +16,8 @@ import {
 } from "../constants";
 import { connect } from "react-redux";
 import { setSelectedTab } from "../stores/tab/tabActions";
+import { vendorName } from "../screens/Authentication/SignUp";
+import { vendorLaundryName } from "../screens/Authentication/SignUp";
 
 const Drawer = createDrawerNavigator();
 
@@ -100,7 +102,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 						marginTop: SIZES.radius,
 						alignItems: "center",
 					}}
-					onPress={() => console.log("Profile")}
+					onPress={() => console.log(vendorLaundryName)}
 				>
 					<Image
 						source={dummyData.myProfile.profile_image}
@@ -117,10 +119,10 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 						}}
 					>
 						<Text style={{ color: COLORS.white, ...FONTS.h3 }}>
-							{dummyData.myProfile.name}
+							{vendorLaundryName}
 						</Text>
 						<Text style={{ color: COLORS.white, ...FONTS.body4 }}>
-							View your profile
+							By {vendorName}
 						</Text>
 					</View>
 				</TouchableOpacity>
