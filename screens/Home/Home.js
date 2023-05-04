@@ -24,27 +24,6 @@ import { useNavigation } from '@react-navigation/native';
 const Home = () => {
 	const navigation = useNavigation();
 	console.log(vendorServicesMap);
-	const DATA = [{
-		id: 1,
-		name: "Total Revenue Generated",
-		description: "",
-		categories: [1, 2],
-		price: "₹2000",
-		Times: "Revenue",
-		isFavourite: true,
-		image: require("../../assets/dummyData/regularwash.png"),
-		onPress: "console.log(\"1\")"
-	}, {
-		id: 2,
-		name: "Count",
-		description: "",
-		categories: [1, 2],
-		price: "30",
-		Times: "Total Orders",
-		isFavourite: true,
-		image: require("../../assets/dummyData/heavysteampress.png"),
-		onPress: "console.log(\"2\")"
-	}]
 
 	function renderPickUpFrom() {
 		return (
@@ -185,7 +164,7 @@ const Home = () => {
 				></View>
 				<View>
 					<Text style={{ ...FONTS.h3 }}>{language == "E" ? "New Orders" : "नए ऑर्डर्स"}</Text>
-					<Text style={{ ...FONTS.h1, color: COLORS.primary, marginTop: "5%" }}>10</Text>
+					<Text style={{ ...FONTS.h1, color: COLORS.primary, marginTop: "5%" }}>2</Text>
 				</View>
 				<View
 					style={{
@@ -250,7 +229,7 @@ const Home = () => {
 				></View>
 				<View>
 					<Text style={{ ...FONTS.h3 }}>{language == "E" ? "Orders Completed" : "संपन्न ऑर्डर्स"}</Text>
-					<Text style={{ ...FONTS.h1, color: COLORS.primary, marginTop: "5%" }}>25</Text>
+					<Text style={{ ...FONTS.h1, color: COLORS.primary, marginTop: "5%" }}>4</Text>
 				</View>
 			</TouchableOpacity>
 

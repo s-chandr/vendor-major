@@ -29,8 +29,12 @@ const cancel = require("../assets/icons/cross.png")
 const back = require("../assets/icons/back.png")
 const audio_supp=require("../assets/icons/voice-assistant.png")
 const tick=require("../assets/icons/tick.png")
+const rupee=require("../assets/icons/rupee.png")
+const right=require("../assets/icons/right-arrow.png")
 export default {
     coupon,
+    right,
+    rupee,
     tick,
     audio_supp,
     cross,

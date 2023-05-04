@@ -10,6 +10,7 @@ import SignUp from './Authentication/SignUp';
 import Otp from './Authentication/Otp';
 import MyCard from './Orders/Orders';
 import OrderDetail from './Order/OrderDetail';
+import MyEarnings from './Earnings/MyEarnings';
 export {
     MainLayout,
     Home,
@@ -23,4 +24,5 @@ export {
     Otp,
     MyCard,
     OrderDetail,
+    MyEarnings
 };

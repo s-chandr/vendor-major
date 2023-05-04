@@ -144,8 +144,13 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 						}}
 					/>
 					<CustomDrawerItem
-						label={constants.screens.my_wallet}
-						icon={icons.wallet}
+						label={constants.screens.myearnings}
+						icon={icons.rupee}
+						isFocused={selectedTab == constants.screens.myearnings}
+						onPress={() => {
+							setSelectedTab(constants.screens.myearnings);
+							navigation.navigate("MainLayout");
+						}}
 					/>
 					<CustomDrawerItem
 						label={constants.screens.notification}

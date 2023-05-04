@@ -26,7 +26,8 @@ const Language = ({ navigation, route }) => {
 			style={{
 				display: 'flex',
 				alignItems: 'center',
-				height: "100%"
+				height: "100%",
+				backgroundColor: COLORS.white
 			}}
 		>
 			<Image
@@ -183,9 +184,7 @@ const styles = StyleSheet.create({
 		width: "45%",
 		alignItems: 'center',
 		flexDirection: 'column',
-		backgroundColor: COLORS.white2,
 		paddingTop: SIZES.padding + 5,
 		paddingBottom: SIZES.padding
-		// height: 'fit-content'
 	}
 })

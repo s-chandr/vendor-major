@@ -16,7 +16,7 @@ import LinearGradient from "react-native-linear-gradient";
 import { connect } from "react-redux";
 import { setSelectedTab } from "../stores/tab/tabActions";
 
-import { Home, Search, CartTab, Favourite, Notification } from "../screens";
+import { Home, Favourite, Notification,MyEarnings } from "../screens";
 
 import {
 	COLORS,
@@ -27,7 +27,9 @@ import {
 	dummyData,
 } from "../constants";
 import { Header } from "../components";
+import { vendorLaundryName } from "./Authentication/SignUp";
 
+var laundryName=vendorLaundryName;
 const TabButton = ({ label, icon, isFocused, outerContainerStyle, innerContainerStyle, onPress }) => {
 	return (
 		<TouchableWithoutFeedback
@@ -95,10 +97,8 @@ const MainLayout = ({
 
 	const homeTabFlex = useSharedValue(1)
 	const homeTabColor = useSharedValue(COLORS.white)
-	const searchTabFlex = useSharedValue(1)
-	const searchTabColor = useSharedValue(COLORS.white)
-	const cartTabFlex = useSharedValue(1)
-	const cartTabColor = useSharedValue(COLORS.white)
+	const myearningsTabFlex = useSharedValue(1)
+	const myearningsTabColor = useSharedValue(COLORS.white)
 	const favouriteTabFlex = useSharedValue(1)
 	const favouriteTabColor = useSharedValue(COLORS.white)
 	const notificationTabFlex = useSharedValue(1)
@@ -118,27 +118,15 @@ const MainLayout = ({
 		}
 	})
 
-	const searchFlexStyle = useAnimatedStyle(() => {
+	const myearningsFlexStyle = useAnimatedStyle(() => {
 		return {
-			flex: searchTabFlex.value
+			flex: myearningsTabFlex.value
 		}
 	})
 
-	const searchColorStyle = useAnimatedStyle(() => {
+	const myearningsColorStyle = useAnimatedStyle(() => {
 		return {
-			backgroundColor: searchTabColor.value
-		}
-	})
-
-	const cartFlexStyle = useAnimatedStyle(() => {
-		return {
-			flex: cartTabFlex.value
-		}
-	})
-
-	const cartColorStyle = useAnimatedStyle(() => {
-		return {
-			backgroundColor: cartTabColor.value
+			backgroundColor: myearningsTabColor.value
 		}
 	})
 
@@ -184,30 +172,17 @@ const MainLayout = ({
 			homeTabColor.value = withTiming(COLORS.white, { duration: 600 })
 		}
 
-		if (selectedTab == constants.screens.search) {
+		if (selectedTab == constants.screens.myearnings) {
 			flatListRef.current.scrollToIndex({
 				index: 1,
 				animated: false
 			})
 
-			searchTabFlex.value = withTiming(4, { duration: 600 })
-			searchTabColor.value = withTiming(COLORS.primary, { duration: 600 })
+			myearningsTabFlex.value = withTiming(4, { duration: 600 })
+			myearningsTabColor.value = withTiming(COLORS.primary, { duration: 600 })
 		} else {
-			searchTabFlex.value = withTiming(1, { duration: 600 })
-			searchTabColor.value = withTiming(COLORS.white, { duration: 600 })
-		}
-
-		if (selectedTab == constants.screens.cart) {
-			flatListRef.current.scrollToIndex({
-				index: 2,
-				animated: false
-			})
-
-			cartTabFlex.value = withTiming(4, { duration: 600 })
-			cartTabColor.value = withTiming(COLORS.primary, { duration: 600 })
-		} else {
-			cartTabFlex.value = withTiming(1, { duration: 600 })
-			cartTabColor.value = withTiming(COLORS.white, { duration: 600 })
+			myearningsTabFlex.value = withTiming(1, { duration: 600 })
+			myearningsTabColor.value = withTiming(COLORS.white, { duration: 600 })
 		}
 
 		if (selectedTab == constants.screens.favourite) {
@@ -253,7 +228,7 @@ const MainLayout = ({
 					marginTop: 25,
 					alignItems: "center",
 				}}
-				title={selectedTab.toUpperCase()}
+				title={selectedTab.toUpperCase()==="HOME"?laundryName.toUpperCase():selectedTab.toUpperCase()}
 				leftComponent={
 					<TouchableOpacity
 						style={{
@@ -317,8 +292,7 @@ const MainLayout = ({
 								}}
 							>
 								{item.label == constants.screens.home && <Home />}
-								{item.label == constants.screens.search && <Search />}
-								{item.label == constants.screens.cart && <CartTab />}
+								{item.label == constants.screens.myearnings && <MyEarnings />}
 								{item.label == constants.screens.favourite && <Favourite />}
 								{item.label == constants.screens.notification && <Notification />}
 							</View>
@@ -377,21 +351,12 @@ const MainLayout = ({
 					/>
 
 					<TabButton
-						label={constants.screens.search}
-						icon={icons.search}
-						isFocused={selectedTab == constants.screens.search}
-						outerContainerStyle={searchFlexStyle}
-						innerContainerStyle={searchColorStyle}
-						onPress={() => setSelectedTab(constants.screens.search)}
-					/>
-
-					<TabButton
-						label={constants.screens.cart}
-						icon={icons.cart}
-						isFocused={selectedTab == constants.screens.cart}
-						outerContainerStyle={cartFlexStyle}
-						innerContainerStyle={cartColorStyle}
-						onPress={() => setSelectedTab(constants.screens.cart)}
+						label={constants.screens.myearnings}
+						icon={icons.rupee}
+						isFocused={selectedTab == constants.screens.myearnings}
+						outerContainerStyle={myearningsFlexStyle}
+						innerContainerStyle={myearningsColorStyle}
+						onPress={() => setSelectedTab(constants.screens.myearnings)}
 					/>
 
 					<TabButton

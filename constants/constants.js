@@ -36,6 +36,7 @@ const screens = {
   favourite: "Favourite",
   notification: "Notification",
   my_wallet: "My Wallet",
+  myearnings: "My Earnings"
 };
 
 const bottom_tabs = [
